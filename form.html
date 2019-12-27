@@ -1,0 +1,37 @@
+<html>
+<head>
+<title> Deloitte New Hire Registry </title>
+<script src="../javascript/validationscript.js">
+
+</script>
+</head>
+<body bgcolor = "pink" >
+<form onsubmit="return submitForm()">
+<center>
+<h1>Deloitte New Hire Registry</h1>
+Firstname: <input id="id1" oninput="nameValidation()"/><span id="errorName"></span>
+Lastname: <input id="id2" oninput="nameValidation1()"/><span id="errorName1"></span><br/><br/>
+Password: <input type="password" name="password" pattern="[A-Z]{1}[a-zA-Z0-9*&^%$#@!]{7,}" /><br/><br/>
+Email id: <input type="text" name="email" pattern="[A-Za-z0-9_.]+[@]{1}[a-zA-Z]+(.com|.co|.in)" /><br/><br/>
+Date of birth: <input type="date" name="Date" /><br/><br/>
+Phone Number: <input type="text" name="Name" required pattern="[6-9]{1}[0-9]{9}"/><br/><br/>
+Address: <textarea rows=10 cols=50> </textarea> <br/><br/>
+Gender: <input type="radio" name="Gender" /> Male
+<input type="radio" name="Gender" /> Female <span id="errorGender"></span><br/><br/>
+Languages Known:
+English:<input type="checkbox" name="chechbox" value="English"/> Hindi:<input type="checkbox" name="chechbox1" value="Hindi"/>
+Kannada:<input type="checkbox" name="chechbox2" value="kannada"/><br/><br/>
+Places Visited: 
+<select>
+<option value="">Please select</option> 
+<option class="Places Visited" value="Bangalore">Bangalore</option>
+<option class="Places Visited" value="Mysore">Mysore</option>
+<option class="Places Visited" value="Hyderabad">Hyderabad</option>
+</select> <span id="errorcheck"></span>color: <input type="color"/><br></br>
+Upload: <input type="file" value="Upload file" multiple>
+Time:<input type="time"/> <br/><br/>
+<input type="Submit" value="SUBMIT"> <input type="Reset" value="RESET"> 
+</center>
+</form>
+</body>
+</html>
