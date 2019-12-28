@@ -1,0 +1,25 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<style>
+div{border:solid; background-color:white; color:black;}
+.d-sub{width:200px;background:wheat;border-radius: 12px;color:black;font-size:18px;border:5px solid #fff;outline:none;font-weight:bolder;letter-spacing:2px;}
+</style>
+<script src="../deloitte2-master/textboxesvalidation.js"></script>
+</head>
+<body>
+<div class="row" style="height:80px;">
+<div class ="col-md-12"> <h1 align=center>Registration Details</h1></div>
+</div><br/><br/>
+<center>
+<form>
+<img src="food.jpg" style="padding-left:50px;width:600px;padding-right:40px;height:400px;float:right;">
+<input type="text" name="Name" placeholder="   Name" class="d-sub" id="txtname" oninput="nameValidation()"/><span id="errorName" style="color:red"></span><br/><br/>
+<input type="text" name="username" placeholder="   UserName" class="d-sub"/><br/><br/>
+<input type="password" name="password" placeholder="   Password" class="d-sub" id="txtpass" oninput="checkPassword()"/><span id="errorPass" style="color:red"></span><br/><br/>
+<input type="email" name="email" placeholder="   EmailId" class="d-sub" id="txtemail" oninput="checkemail()"/><span id="erroremail" style="color:red"></span><br/><br/>
+<input type="text" name="phonenumber" placeholder="   PhoneNumber" class="d-sub" id="txtnumber" oninput="checknumber()"/><span id="errornumber" style="color:red"></span><br/><br/>
+<input type="submit" name="register" value="Register" class="d-sub" onclick="onsub()"/><br/><br/></center>
+</form>
+</body>
+</html>
